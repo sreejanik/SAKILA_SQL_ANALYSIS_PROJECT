@@ -1,60 +1,80 @@
-# SQL Business Analysis – Sakila Database
+# SQL Business Analysis – Sakila Rental Database
 
-## 📌 Overview
-This project demonstrates how SQL can be used to analyze a relational database and extract meaningful business insights. The analysis is performed on the **Sakila DVD Rental database**, simulating a real-world rental business.
+## 🚀 Business Problem
 
----
-
-## 🎯 Objectives
-- Analyze customer behavior and spending patterns  
-- Measure total revenue and rental activity  
-- Identify high-demand movies and top-performing categories  
-- Detect seasonal trends in rentals  
-- Compare store-level performance  
+A rental business lacks structured insights into **customer behavior, revenue drivers, and inventory performance**, limiting data-driven decision-making.
 
 ---
 
-## 🛠️ Tools & Technologies
-- SQL (MySQL)
-- MySQL Workbench  
-- Sakila Sample Database  
+## 🎯 Objective
+
+Use SQL to extract insights on:
+
+* Customer spending patterns
+* Revenue generation
+* Film and category performance
+* Seasonal rental trends
+* Store-level efficiency
 
 ---
 
-## 📊 Key Analysis Performed
-- Customer analysis (top customers, average spending)  
-- Revenue analysis (~16,000 rentals, ~67,000 total revenue)  
-- Movie & category performance (most rented films, top categories)  
-- Time-based analysis (monthly trends, peak in July)  
-- Store performance comparison  
-- Actor influence on movie demand  
+## 🛠️ Tech Stack
+
+* **SQL (MySQL)**
+* **MySQL Workbench**
+* **Relational Database (Sakila)**
+
+---
+
+## 🧩 Database Understanding
+
+Worked with a normalized schema:
+Customer → Rental → Inventory → Film → Category
+Customer → Payment
+
+Focused on **joining multiple tables** to simulate real-world business queries.
+
+---
+
+## 📊 Key Analysis
+
+* Identified **top customers** and revenue contribution
+* Calculated **total revenue (~67K) and rental volume (~16K)**
+* Ranked **high-performing films and categories**
+* Analyzed **monthly rental trends**
+* Compared **store-level performance**
+* Evaluated **actor impact on film demand**
 
 ---
 
 ## 🔍 Key Insights
-- Strong customer engagement with high rental volume  
-- Revenue concentrated among top customers and categories  
-- **Sports category** generates highest revenue  
-- Clear seasonality with peak rentals in **July**  
-- Store-level performance differences observed  
+
+* Revenue is **concentrated among top customers** → dependency risk
+* **Sports category** drives highest revenue → inventory prioritization
+* Clear **seasonality (July peak)** → demand planning opportunity
+* Performance varies across stores → operational optimization needed
 
 ---
 
-## 📁 Database Schema
-The analysis uses a normalized relational schema with key entities:
-Customer → Rental → Inventory → Film → Category  
-Customer → Rental → Payment  
+## 💡 Business Impact
+
+This analysis supports:
+
+* **Customer targeting & retention strategies**
+* **Inventory optimization by category**
+* **Seasonal demand planning**
+* **Store performance benchmarking**
 
 ---
 
 ## ⚠️ Limitations
-- Dataset is synthetic (Sakila sample database)  
-- No real-world customer demographics or marketing data  
-- Static dataset (no real-time updates)  
+
+* Synthetic dataset (not real-world behavior)
+* No marketing or demographic data
+* Static data (no time-series updates)
 
 ---
 
 ## ✅ Conclusion
-This project showcases the use of SQL for end-to-end business analysis, including data extraction, transformation, and insight generation from a relational database.
 
----
+Demonstrates the ability to use SQL for **end-to-end business analysis**, including complex joins, aggregations, and insight extraction from relational data.
